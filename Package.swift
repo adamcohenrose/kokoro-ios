@@ -16,10 +16,10 @@ let package = Package(
     ),
   ],
   dependencies: [
-    .package(path: "../mlx-swift"),
-    // .package(url: "https://github.com/mlalma/eSpeakNGSwift", from: "1.0.1"),
-    .package(path: "../MisakiSwift"),
-    .package(path: "../MLXUtilsLibrary")
+    .package(url: "https://github.com/ml-explore/mlx-swift", exact: "0.31.5"),
+      // .package(url: "https://github.com/mlalma/eSpeakNGSwift", from: "1.0.1"),
+    .package(url: "https://github.com/adamcohenrose/MisakiSwift", branch: "main"),
+    .package(url: "https://github.com/adamcohenrose/MLXUtilsLibrary", branch: "build/xcode-27"),
   ],
   targets: [
     .target(
